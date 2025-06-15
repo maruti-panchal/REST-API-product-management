@@ -1,4 +1,12 @@
 package com.example.demo.modal;
 
-public class CategoryModal {
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Builder
+public class CategoryModal extends BaseModal {
+    private String category;
 }
