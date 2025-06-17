@@ -1,14 +1,16 @@
 package com.example.demo.modal;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import lombok.*;
 
 import org.springframework.stereotype.Component;
-
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @Builder
+@Entity(name = "product")
 public class ProductModal extends BaseModal {
     private String title;
     private String image;
@@ -17,6 +19,7 @@ public class ProductModal extends BaseModal {
     private String brand;
     private String model;
     private String color;
+    @ManyToOne
     private CategoryModal category;
     private double discount;
 }

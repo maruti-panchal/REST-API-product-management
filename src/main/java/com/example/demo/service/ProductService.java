@@ -7,8 +7,9 @@ import java.util.List;
 
 public interface ProductService {
 //    public List<ProductModal> getProducts();
-//    public ProductModal addProduct(ProductModal product);
+
 //    public ProductModal updateProduct(ProductModal product);
 //    public boolean deleteProduct(long id);
-    public ProductModal getProduct(long id);
+    public ProductModal addProduct(ProductModal product);
+        public ProductModal getProduct(long id);
 }

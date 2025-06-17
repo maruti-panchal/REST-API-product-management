@@ -28,7 +28,11 @@ public class FakeStoreProductService implements ProductService{
         return convertProductDtoToModal(dto);
     }
 
-//    public List<ProductModal> getProducts(){
+    @Override
+    public ProductModal addProduct(ProductModal product) {
+        return null;
+    }
+    //    public List<ProductModal> getProducts(){
 //        return null;
 //    }
 //    public ProductModal addProduct(ProductModal productModal) {
